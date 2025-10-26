@@ -11,7 +11,7 @@ import {
   Platform,
   ScrollView,
 } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { FontAwesome6 } from '@react-native-vector-icons/fontawesome6';
 import { useAuth } from '../context/AuthContext';
 import { validateEmail } from '../utils/validation';
 
@@ -148,8 +148,8 @@ const SignupScreen = ({ navigation }) => {
                 style={styles.eyeToggle}
                 onPress={() => setShowPassword(!showPassword)}
               >
-                <Ionicons
-                  name={showPassword ? 'eye-off' : 'eye'}
+                <FontAwesome6
+                  name={showPassword ? 'eye-slash' : 'eye'}
                   size={20}
                   color="#666"
                 />
